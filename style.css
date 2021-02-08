@@ -1,5 +1,9 @@
 img {
-  height: 200px;
+  width:100%;
+}
+
+body {
+  background-color: #333;
 }
 
 a {
@@ -10,4 +14,60 @@ a {
 
 .quokka-link {
   color: green;
+}
+
+/* menu css */
+
+ul {
+  list-style-type: none;
+  margin: -5;
+  padding: 5;
+  overflow: hidden;
+  background-color: #2b2828;
+  /* border: 1px solid white; */
+
+  /*make menu bar stick*/
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+div{
+  font-family: monospace;
+  font-size: 15px;
+}
+
+/* For centered Large Text */
+
+div1{
+  font-family: monospace;
+  font-size: 60px;
+  color: white;
+}
+
+/* zoom text images */
+
+div2{
+  width:10px;
+}
+
+.center{
+  text-align: center;
 }
