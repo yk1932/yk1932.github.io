@@ -1,7 +1,9 @@
+/* Default Image size */
 img {
   width:90%;
 }
 
+/* Background Color */
 body {
   background-color: #333;
 }
@@ -12,10 +14,6 @@ a {
   color: orange;
 }
 
-.quokka-link {
-  color: green;
-}
-
 /* menu css */
 
 ul {
@@ -24,7 +22,6 @@ ul {
   padding: 5;
   overflow: hidden;
   background-color: #2b2828;
-  /* border: 1px solid white; */
 
   /*make menu bar stick*/
   position: -webkit-sticky;
@@ -49,10 +46,13 @@ li a:hover {
   background-color: #111;
 }
 
+/* Default div settings */
 div{
   font-family: monospace;
   font-size: 15px;
 }
+
+/* Defining left and right text align */
 
 .left {
     float:left;
@@ -82,15 +82,20 @@ div2{
 
 }
 
+/* paragraph dafault settings */
 p {
   font-family: monospace;
   font-size: 15px;
   color: white;
 }
 
+/* Defining centering text */
+
 .center{
   text-align: center;
 }
+
+/* Footer style */
 
 footer {
   font-family: monospace;

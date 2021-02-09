@@ -1,13 +1,14 @@
 console.log("HeyYY!");
 
-// 1 - selectors
-let orangeParagraph = document.getElementById("orange-paragraph")
+// Declaring Variable
+let blueText = document.getElementById("blue-text")
 
-// 2 - events
+// interactivity: When button is clicked, the text in the button changes
+// to blue and the user is directed to the video page
 
-orangeParagraph.addEventListener('click', () => {
+blueText.addEventListener('click', () => {
 
-  orangeParagraph.style.color="#2b2828";
+  blueText.style.color="#2b2828";
   document.location.href = "video.html";
 
 })
