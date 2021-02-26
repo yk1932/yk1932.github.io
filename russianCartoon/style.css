@@ -1,0 +1,40 @@
+.container{
+  max-width:100%;
+  margin:0 auto;
+  background: #34332C;
+  font-size:24px;
+  padding:25px;
+}
+
+/* .parallax{
+  background: url('image/1.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height:500px;
+} */
+
+.parallax {
+  padding:100px 35px;
+  min-height:900px;
+  background: transparent;
+}
+
+.info{
+  z-index:2;
+  position:relative;
+  color:#0006CA;
+  text-shadow: -1px -1px 0 #CA2200, 1px -1px 0 #CA2200, -1px 1px 0 #CA2200, 1px 1px 0 #CA2200;
+
+}
+
+
+
+body {
+  font-family:"Lucida Console", "Courier New", monospace;
+  color:#fff;
+}
+
+
+body {
+  background-color: white;
+}
