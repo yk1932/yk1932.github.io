@@ -9,13 +9,15 @@ var speechBubble2 = document.getElementsByClassName('cls-26');
 var audio = new Audio('sound/floor 2/DIALOGUE2.ogg');
 
   function highlight(){
-    speechBubble1[0].style.fill = '#b1d7dd';
-    speechBubble2[0].style.fill = '#b1d7dd';
+    speechBubble1[0].style.fill = '#FFFFFF';
+    speechBubble2[0].style.fill = '#FFFFFF';
   }
 
   function dehighlight(){
     speechBubble1[0].style.fill = '#b1d7dd00';
     speechBubble2[0].style.fill = '#b1d7dd00';
+    audio.pause();
+    audio.currentTime = 0;
   }
 
   function playAudio(){

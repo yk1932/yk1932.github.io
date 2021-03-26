@@ -2,13 +2,13 @@
 
 var momSpeech = document.getElementsByClassName('cls-39');
 var siriSpeech = document.getElementsByClassName('cls-38');
-var gossipSpeech = document.getElementsByClassName('cls-37');
+var noteSpeech = document.getElementsByClassName('cls-37');
 
 // CHECK IF EACH AUDIO PLAYED
 
 var momPlayed = Boolean(false);
 var siriPlayed = Boolean(false);
-var gossipPlayed = Boolean(false);
+var notePlayed = Boolean(false);
 
 
 // MOM
@@ -16,24 +16,25 @@ var gossipPlayed = Boolean(false);
 var audioMom = new Audio('sound/floor 3/stop.ogg');
 
   function highlightMom(){
-    momSpeech[0].style.fill = '#b1d7dd';
+    momSpeech[0].style.fill = '#FFFFFF';
   }
 
   function dehighlightMom(){
     momSpeech[0].style.fill = '#b1d7dd00';
+    audioMom.pause();
+    audioMom.currentTime = 0;
   }
 
   function playAudioMom(){
-    // audio.pause();
     audioMom.play();
-    // if (audioMom.paused == false) {
-    //   momSpeech[0].style.fill = '#b1d7dd';
-    // }
 
-    momPlayed = Boolean(true);
-    console.log(momPlayed);
-
-   }
+    // If finished playing, make boolean true
+    audioMom.addEventListener("ended", function(){
+      momPlayed = Boolean(true);
+      console.log(momPlayed);
+      checkEnd();
+    });
+     }
 
 
 // SIRI
@@ -41,19 +42,24 @@ var audioMom = new Audio('sound/floor 3/stop.ogg');
 var audioSiri = new Audio('sound/floor 3/colonoscopy.ogg');
 
 function highlightSiri(){
-  siriSpeech[0].style.fill = '#b1d7dd';
+  siriSpeech[0].style.fill = '#FFFFFF';
 }
 
 function dehighlightSiri(){
   siriSpeech[0].style.fill = '#b1d7dd00';
+  audioSiri.pause();
+  audioSiri.currentTime = 0;
 }
 
 function playAudioSiri(){
-  // audio.pause();
   audioSiri.play();
-  siriPlayed = Boolean(true);
-  console.log(siriPlayed);
-   }
+
+  // If finished playing, make boolean true
+  audioSiri.addEventListener("ended", function(){
+    siriPlayed = Boolean(true);
+    console.log(siriPlayed);
+    checkEnd();
+  });}
 
 
 // VOICE NOTE
@@ -61,30 +67,27 @@ function playAudioSiri(){
 var audioNote = new Audio('sound/floor 3/heyboo.ogg');
 
 function highlightNote(){
-  gossipSpeech[0].style.fill = '#b1d7dd';
+  noteSpeech[0].style.fill = '#FFFFFF';
 }
 
 function dehighlightNote(){
-  gossipSpeech[0].style.fill = '#b1d7dd00';
+  noteSpeech[0].style.fill = '#b1d7dd00';
+  audioNote.pause();
+  audioNote.currentTime = 0;
 }
 
 function playAudioNote(){
   // audio.pause();
   audioNote.play();
-  gossipPlayed = Boolean(true);
-  console.log(gossipPlayed);
+
+  // If finished playing, make boolean true
+  audioNote.addEventListener("ended", function(){
+    notePlayed = Boolean(true);
+    console.log(notePlayed);
+    checkEnd();});
+
    }
 
-// IF ALL DIALOGUES PLAYED MOVE ON
-
-if (siriPlayed == true) {
-  console.log("All Played");
-}
-
-// if (siriPlayed == true && gossipPlayed == true && momPlayed == true){
-//   playDing();
-//   console.log("All Played");
-// }
 
 // PLAY DING
 
@@ -94,4 +97,20 @@ function playDing(){
   ding.addEventListener("ended", function(){
    location.replace("floor4.html");
  });
+}
+
+
+function checkEnd(){
+  if (momPlayed){
+    console.log("Mom played");}
+  if (siriPlayed){
+    console.log("Siri played");
+    }
+  if (notePlayed){
+    console.log("note played");
+    }
+  if (momPlayed && siriPlayed && notePlayed){
+    console.log("All played");
+    playDing();
+    }
 }
