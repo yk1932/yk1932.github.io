@@ -1,7 +1,15 @@
+/* Default Image size */
 img {
+<<<<<<< HEAD
   width:100%;
 }
 
+=======
+  width:90%;
+}
+
+/* Background Color */
+>>>>>>> 8dbc25b59bc760dddf78cb89e33c308acccfb328
 body {
   background-color: #333;
 }
@@ -12,8 +20,95 @@ a {
   color: orange;
 }
 
-.quokka-link {
-  color: green;
+/* menu css */
+
+ul {
+  list-style-type: none;
+  margin: -5;
+  padding: 5;
+  overflow: hidden;
+  background-color: #2b2828;
+
+  /*make menu bar stick*/
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* Default div settings */
+div{
+  font-family: monospace;
+  font-size: 15px;
+}
+
+/* Defining left and right text align */
+
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+
+/* For centered Large Text */
+
+div1{
+  font-family: monospace;
+  font-size: 30px;
+  color: white;
+}
+
+/* zoom text option */
+
+div2{
+  color: #2D8CFF;
+  font-family: monospace;
+  font-size: 50px;
+  text-shadow: -1px 1px 0 white,
+				  1px 1px 0 white,
+				 1px -1px 0 white;
+				-1px -1px 0 white;
+
+}
+
+/* paragraph dafault settings */
+p {
+  font-family: monospace;
+  font-size: 15px;
+  color: white;
+}
+
+/* Defining centering text */
+
+.center{
+  text-align: center;
+}
+
+/* Footer style */
+
+footer {
+  font-family: monospace;
+  text-align: center;
+  padding: 3px;
+  background-color:#2b2828;
+  color: white;
 }
 
 /* menu css */
