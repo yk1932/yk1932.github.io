@@ -4,6 +4,15 @@ var momSpeech = document.getElementsByClassName('cls-39');
 var siriSpeech = document.getElementsByClassName('cls-38');
 var noteSpeech = document.getElementsByClassName('cls-37');
 
+// INTERACTABLE
+
+let interactable = document.getElementById("interactable")
+let player = document.getElementById("player")
+
+interactable.addEventListener('mousemove', () => {
+  player.play();
+})
+
 // CHECK IF EACH AUDIO PLAYED
 
 var momPlayed = Boolean(false);

@@ -3,7 +3,16 @@
 var deliverySpeech = document.getElementsByClassName('cls-40');
 var coworkerSpeech1 = document.getElementsByClassName('cls-38');
 var coworkerSpeech2 = document.getElementsByClassName('cls-39');
+var karen = new Audio('sound/floor 5/karen.ogg');
 
+// INTERACTABLE
+
+let interactable = document.getElementById("interactable")
+let player = document.getElementById("player")
+
+interactable.addEventListener('mousemove', () => {
+  player.play();
+})
 
 // CHECK IF EACH AUDIO PLAYED
 
@@ -86,6 +95,10 @@ function checkEnd(){
     }
   if (deliveryPlayed && coworkerPlayed){
     console.log("All played");
-    playDing();
+    karen.play();
+
+    karen.addEventListener("ended", function(){
+      playDing();});
+
     }
 }

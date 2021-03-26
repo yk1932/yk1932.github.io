@@ -3,6 +3,14 @@
 var speechBubble1 = document.getElementsByClassName('cls-25');
 var speechBubble2 = document.getElementsByClassName('cls-26');
 
+// INTERACTABLE
+
+let interactable = document.getElementById("interactable")
+let player = document.getElementById("player")
+
+interactable.addEventListener('mousemove', () => {
+  player.play();
+})
 
 // Lisa
 
