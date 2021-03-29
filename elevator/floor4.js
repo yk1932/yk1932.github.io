@@ -1,18 +1,17 @@
 // FLOOR THREE SCRIPT
 
-var deliverySpeech = document.getElementsByClassName('cls-40');
-var coworkerSpeech1 = document.getElementsByClassName('cls-38');
-var coworkerSpeech2 = document.getElementsByClassName('cls-39');
+var deliverySpeech = document.getElementsByClassName('st39');
+var coworkerSpeech1 = document.getElementsByClassName('st37');
+var coworkerSpeech2 = document.getElementsByClassName('st38');
 var karen = new Audio('sound/floor 5/karen.ogg');
+var door1 = document.getElementById('elevator_door1');
+var door2 = document.getElementById('elevator_door2');
+
 
 // INTERACTABLE
 
 let interactable = document.getElementById("interactable")
 let player = document.getElementById("player")
-
-interactable.addEventListener('mousemove', () => {
-  player.play();
-})
 
 // CHECK IF EACH AUDIO PLAYED
 
@@ -31,7 +30,6 @@ function highlightDelivery(){
 function dehighlightDelivery(){
   deliverySpeech[0].style.fill = '#b1d7dd00';
   audioDelivery.pause();
-  audioDelivery.currentTime = 0;
 }
 
 function playAudioDelivery(){
@@ -58,7 +56,6 @@ function dehighlightCoworker(){
   coworkerSpeech1[0].style.fill = '#b1d7dd00';
   coworkerSpeech2[0].style.fill = '#b1d7dd00';
   audioCoworker.pause();
-  audioCoworker.currentTime = 0;
 }
 
 function playAudioCoworker(){
@@ -73,15 +70,20 @@ function playAudioCoworker(){
 
    }
 
+var ding = new Audio('sound/13. ding.ogg');
 
 // PLAY DING
 
 function playDing(){
-  var ding = new Audio('sound/13. ding.ogg');
   ding.play();
   ding.addEventListener("ended", function(){
-   location.replace("floor4.html");
  });
+}
+
+function openDoor(){
+  door1.style.display = 'none';
+  door2.style.display = 'none';
+  player.play();
 }
 
 
@@ -95,10 +97,12 @@ function checkEnd(){
     }
   if (deliveryPlayed && coworkerPlayed){
     console.log("All played");
-    karen.play();
-
-    karen.addEventListener("ended", function(){
-      playDing();});
-
+    door1.style.display = 'block';
+    door2.style.display = 'block';
+    ding.play();
+    ding.addEventListener("ended", function(){
+      door1.style.display = 'none';
+      door2.style.display = 'none';
+      karen.play();});
     }
 }

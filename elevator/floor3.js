@@ -1,17 +1,15 @@
 // FLOOR THREE SCRIPT
 
-var momSpeech = document.getElementsByClassName('cls-39');
-var siriSpeech = document.getElementsByClassName('cls-38');
-var noteSpeech = document.getElementsByClassName('cls-37');
+var momSpeech = document.getElementsByClassName('st38');
+var siriSpeech = document.getElementsByClassName('st37');
+var noteSpeech = document.getElementsByClassName('st36');
+var door1 = document.getElementById('elevator_door1');
+var door2 = document.getElementById('elevator_door2');
 
 // INTERACTABLE
 
 let interactable = document.getElementById("interactable")
 let player = document.getElementById("player")
-
-interactable.addEventListener('mousemove', () => {
-  player.play();
-})
 
 // CHECK IF EACH AUDIO PLAYED
 
@@ -31,7 +29,6 @@ var audioMom = new Audio('sound/floor 3/stop.ogg');
   function dehighlightMom(){
     momSpeech[0].style.fill = '#b1d7dd00';
     audioMom.pause();
-    audioMom.currentTime = 0;
   }
 
   function playAudioMom(){
@@ -57,7 +54,6 @@ function highlightSiri(){
 function dehighlightSiri(){
   siriSpeech[0].style.fill = '#b1d7dd00';
   audioSiri.pause();
-  audioSiri.currentTime = 0;
 }
 
 function playAudioSiri(){
@@ -82,7 +78,6 @@ function highlightNote(){
 function dehighlightNote(){
   noteSpeech[0].style.fill = '#b1d7dd00';
   audioNote.pause();
-  audioNote.currentTime = 0;
 }
 
 function playAudioNote(){
@@ -107,6 +102,13 @@ function playDing(){
    location.replace("floor4.html");
  });
 }
+
+function openDoor(){
+  door1.style.display = 'none';
+  door2.style.display = 'none';
+  player.play();
+}
+
 
 
 function checkEnd(){
