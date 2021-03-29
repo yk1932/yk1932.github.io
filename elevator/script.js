@@ -43,6 +43,8 @@ var audio = new Audio('sound/floor 1/DIALOGUE1.ogg');
 
    function playDing(){
      var ding = new Audio('sound/13. ding.ogg');
+     door1.style.display = 'block';
+     door2.style.display = 'block';
      ding.play();
      ding.addEventListener("ended", function(){
       location.replace("floor2.html");

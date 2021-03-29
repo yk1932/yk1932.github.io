@@ -74,11 +74,6 @@ var ding = new Audio('sound/13. ding.ogg');
 
 // PLAY DING
 
-function playDing(){
-  ding.play();
-  ding.addEventListener("ended", function(){
- });
-}
 
 function openDoor(){
   door1.style.display = 'none';
@@ -97,12 +92,27 @@ function checkEnd(){
     }
   if (deliveryPlayed && coworkerPlayed){
     console.log("All played");
+
+    // Disable speech bubbles and mute dialogues
+    coworkerSpeech1[0].style.display = 'none';
+    coworkerSpeech2[0].style.display = 'none';
+    deliverySpeech[0].style.display = 'none';
+    audioDelivery.volume = 0;
+    audioCoworker.volume = 0;
+
+    // close door
     door1.style.display = 'block';
     door2.style.display = 'block';
+
+    // Play ding
     ding.play();
     ding.addEventListener("ended", function(){
+
+      // open door
       door1.style.display = 'none';
       door2.style.display = 'none';
+
+      // karen walks in
       karen.play();});
     }
 }
