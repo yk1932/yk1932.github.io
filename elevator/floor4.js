@@ -6,6 +6,8 @@ var coworkerSpeech2 = document.getElementsByClassName('st38');
 var karen = new Audio('sound/floor 5/karen.ogg');
 var door1 = document.getElementById('elevator_door1');
 var door2 = document.getElementById('elevator_door2');
+var karenPng = document.getElementById('karenImage');
+var svgDisplayPng = document.getElementById('svg_file');
 
 
 // INTERACTABLE
@@ -108,11 +110,12 @@ function checkEnd(){
     ding.play();
     ding.addEventListener("ended", function(){
 
-      // open door
-      door1.style.display = 'none';
-      door2.style.display = 'none';
+      svg_file.style.display ='none';
+
+      karenPng.style.display = 'block';
 
       // karen walks in
       karen.play();});
     }
+
 }
