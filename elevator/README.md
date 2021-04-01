@@ -15,6 +15,7 @@ The main interaction of the website was moving around the SVG images and trigger
  To make sure the users listened to all the dialogues, essential to moving the narrative forward, the elevator moved on to the next floor only after the user interacted and listened to all the dialogues through using a boolean variable. The background sound of the elevator is triggered immediately after the user interacts with the website, through a click, and moves the mouse around and is played during the entirety of the interaction, under the dialogues. 
  
  # Reflection: 
-
+ 
+Looking back on our expectations and goals, I think the final working version fulfilled all the requirements we have set initially. Many of the decisions regarding the interaction of the website came in the creation process. Small details such as the animation, how to enable the audio, etc came through trial and error in the process. Similar with the case for the sound design. Once we had the script written and all recordings done, most of the design choices were made in the editing process, using audacity to tweak it into something that matched our initial concept. We had multiple feedback sessions within the group. After every version was done, we looked for small improvements and made them accordingly which contributed to a more polished final working version. 
 
 
