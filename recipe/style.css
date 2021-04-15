@@ -6,9 +6,13 @@ src: url("fonts/Satisfy-Regular.ttf");}
 font-family: "lora_font";
 src: url("fonts/Lora-VariableFont_wght.ttf");}
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "lora_font";
-
 }
 
 .header {
