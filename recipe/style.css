@@ -1,0 +1,130 @@
+@font-face {
+font-family: "satisfy_font";
+src: url("fonts/Satisfy-Regular.ttf");}
+
+@font-face {
+font-family: "lora_font";
+src: url("fonts/Lora-VariableFont_wght.ttf");}
+
+body {
+  font-family: "lora_font";
+
+}
+
+.header {
+  overflow: hidden;
+  background-color: #DC828F;
+  padding: 20px 10px;
+  font-family: "satisfy_font";
+
+}
+
+.header a {
+  float: left;
+  color: #F5F3E7;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #F5F3E7;
+}
+
+.header a:hover {
+  background-color: #F5F3E7;
+  color: black;
+}
+
+.header a.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#left {
+  /* border: 1px solid lightgray; */
+  background-color: white;
+  width: 75%;
+  padding: 2%;
+
+}
+
+#right {
+  /* border: 1px solid lightgray; */
+  background-color: white;
+  font-size:13px;
+  width: 25%;
+  padding: 2%;
+
+}
+
+.button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "satisfy_font";
+
+}
+
+.h1{
+  font-family: "satisfy_font";
+}
+
+.list-wrap {
+  padding:40px;
+  background-color:#white;
+  border-radius:5px;
+  width:90%;
+}
+
+div.list {
+  counter-reset: list-number;
+}
+div.list div:before {
+  counter-increment: list-number;
+  content: counter(list-number);
+
+  margin-right: 10px;
+  margin-bottom:10px;
+  width:35px;
+  height:35px;
+  display:inline-flex;
+  align-items:center;
+  justify-content: center;
+  font-size:16px;
+  background-color:#1abc9c;
+  border-radius:50%;
+  color:#fff;
+}
+
+.footer {
+  font-family: "satisfy_font";
+   width: 100%;
+   background-color: #DC828F;
+   color: white;
+   text-align: center;
+}
