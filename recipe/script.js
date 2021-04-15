@@ -23,6 +23,30 @@ const handleCheckListChange = (element) => {
     console.log(element.checked)
 }
 
+// video
+const video = document.getElementById("video")
+
+// steps
+const stepsContainer = document.getElementsByClassName("list")[0]
+let steps = []
+
+let cnt = 0;
+stepsContainer.querySelectorAll("div").forEach(step => {
+    const stepNum = cnt++
+    step.addEventListener("click", () => {
+        console.log(stepNum)
+        video.play()
+    })
+})
+
+steps.forEach(step => {
+    console.log(step)
+})
+
+// play video using got them all button
+document.getElementById("gotThemAllButton").addEventListener("click", () => video.play())
+
+// on load get the checklist items from storage and update the dom
 const onLoad = () => {
     ingredientListElements.forEach(ingredientListElement => {
         const ingredient = ingredientListElement.value
