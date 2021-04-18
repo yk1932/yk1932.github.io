@@ -20,7 +20,7 @@ body {
 
 .header {
   overflow: hidden;
-  background-color: #dc828f;
+  background-color: #ffb6c1;
   padding: 20px 10px;
   font-family: "satisfy_font";
 }
@@ -128,7 +128,7 @@ div.list div:before {
   bottom: 0;
   font-family: "satisfy_font";
   width: 100%;
-  background-color: #dc828f;
+  background-color: #ffb6c1;
   color: white;
   text-align: center;
 }
@@ -156,7 +156,7 @@ a {
   top: 100vh;
   font-family: "satisfy_font";
   width: 100%;
-  background-color: #dc828f;
+  background-color: #ffb6c1;
   color: white;
   text-align: center;
 }
