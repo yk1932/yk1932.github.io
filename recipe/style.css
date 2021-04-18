@@ -125,6 +125,7 @@ div.list div:before {
 }
 
 .footer {
+  bottom: 0;
   font-family: "satisfy_font";
   width: 100%;
   background-color: #dc828f;
@@ -135,4 +136,27 @@ div.list div:before {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+#slider {
+  padding: 30px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#track {
+  width: 70%;
+  max-height: 80vh;
+  margin: auto;
+}
+
+.bts.footer {
+  position: static;
+  top: 100vh;
+  font-family: "satisfy_font";
+  width: 100%;
+  background-color: #dc828f;
+  color: white;
+  text-align: center;
 }
