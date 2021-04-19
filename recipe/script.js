@@ -58,6 +58,7 @@ steps[9].addEventListener("click", () => jumpToTime("2.19"));
 steps[13].addEventListener("click", () => jumpToTime("2.48"));
 
 const jumpToTime = (time) => {
+  if (!video.playing) video.play();
   console.log(time);
   video.currentTime = getSeconds(time);
   // console.log(getSeconds(time))
