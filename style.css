@@ -1,15 +1,10 @@
 /* Default Image size */
 img {
-<<<<<<< HEAD
   width:100%;
 }
 
-=======
-  width:90%;
-}
 
 /* Background Color */
->>>>>>> 8dbc25b59bc760dddf78cb89e33c308acccfb328
 body {
   background-color: #333;
 }
