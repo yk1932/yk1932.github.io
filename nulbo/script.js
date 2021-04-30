@@ -1,3 +1,3 @@
-enterWeb(){
+function enterWeb(){
   location.replace("home.html");
 }
