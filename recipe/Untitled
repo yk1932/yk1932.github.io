@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Cookie Recipe</title>
+</head>
+
+<body>
+  <div class="header">
+    <a href="#default" class="logo">🧁 Baking Website 🧁</a>
+    <div class="header-right">
+      <a class="active" href="#home">Recipe</a>
+      <a href="#about">About Us</a>
+    </div>
+  </div>
+
+  <div id="parent">
+        <div id="left">
+          <div class="content">
+            <h1 class="h1">Chewy Chocolate Chip Cookies </h1>
+            <video width="100%" controls>
+            <source src="video.mp4" type="video/mp4">
+            </video>
+            <h1 class="h1">Instructions</h1>
+
+              <div class="list-wrap">
+                <div class="list">
+                  <div>Whisk the flour, baking soda, cornstarch, and salt together in a large bowl. Set aside.</div>
+                  <div>In a medium bowl, whisk the melted butter, brown sugar, and granulated sugar together.</div>
+                  <div> Whisk in the egg, then the egg yolk. Finally, whisk in the vanilla extract. </div>
+                  <div>Pour the wet ingredients into the dry ingredients and mix together with a large spoon or rubber spatula.</div>
+                  <div>Fold in the chocolate chunks. They may not stick to the dough because of the melted butter. </div>
+                  <div>Cover the dough and chill in the refrigerator for 2-3 hours or up to 3-4 days. Chilling is mandatory. </div>
+                  <div>Take the dough out of the refrigerator and allow to slightly soften at room temperature for 10 minutes.</div>
+                  <div>Preheat oven to 325°F (163°C). Line two large baking sheets with parchment paper or silicone baking mats.</div>
+                  <div>Set aside.</div>
+                  <div>Roll the dough into balls, about 3 Tablespoons of dough each.</div>
+                  <div>Roll the cookie dough balls to be taller rather than wide, to ensure the cookies will bake up to be thick.</div>
+                  <div> Place 8 balls of dough onto each cookie sheet. </div>
+                  <div>Press a few more chocolate chips/chunks on top of the dough balls for looks, if desired.</div>
+                  <div>Bake the cookies for 12-13 minutes. They will continue to bake on the cookie sheet.</div>
+                  <div> Allow to cool on the cookie sheet for 10 minutes before transferring to a wire rack to cool completely.</div>
+                  <div>Cookies stay fresh covered at room temperature for up to 1 week.</div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="right">
+          <div class="content">
+            <h1 class="h1">Checklist 📝</h1><br>
+
+            <p>Use the checklist to keep track of all the ingredients!</p><br>
+
+            <form action="/action_page.php">
+
+              <input type="checkbox" id="ingredient1" name="ingredient1" value="flour">
+              <label for="ingredient1"> 2 and 1/4 cups (280g) all-purpose flour</label><br><br>
+
+              <input type="checkbox" id="ingredient2" name="ingredient2" value="baking soda">
+              <label for="ingredient2"> 1 teaspoon baking soda</label><br><br>
+
+              <input type="checkbox" id="ingredient3" name="ingredient3" value="cornstarch">
+              <label for="ingredient3"> 1 and 1/2 teaspoons cornstarch</label><br><br>
+
+              <input type="checkbox" id="ingredient4" name="ingredient4" value="salt">
+              <label for="ingredient4"> 1/2 teaspoon salt</label><br><br>
+
+              <input type="checkbox" id="ingredient5" name="ingredient5" value="butter">
+              <label for="ingredient5"> 3/4 cup unsalted butter, melted & slightly cooled</label><br><br>
+
+              <input type="checkbox" id="ingredient6" name="ingredient6" value="brown sugar">
+              <label for="ingredient6"> 3/4 cup packed light or dark brown sugar</label><br><br>
+
+              <input type="checkbox" id="ingredient7" name="ingredient7" value="granulated sugar">
+              <label for="ingredient7"> 1/2 cup (100g) granulated sugar</label><br><br>
+
+              <input type="checkbox" id="ingredient8" name="ingredient8" value="egg">
+              <label for="ingredient8"> 1 large egg + 1 egg yolk, at room temperature</label><br><br>
+
+              <input type="checkbox" id="ingredient9" name="ingredient9" value="vanilla">
+              <label for="ingredient9"> 2 teaspoons pure vanilla extract</label><br><br>
+
+              <input type="checkbox" id="ingredient9" name="ingredient9" value="chocolate">
+              <label for="ingredient10"> 1 and 1/4 cups chocolate chips</label><br><br>
+
+              <br><input class="button" type="submit" value="Got them all!">
+            </form>
+        </div>
+    </div>
+  </div>
+</body>
+
+<div class="footer">
+  <p><br>© 2021 Comlab Video Assignment. All Rights Reserved <br>
+  Aayush, Marta, Alia, Yeji<br><br></p>
+</div>
