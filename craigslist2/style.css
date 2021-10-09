@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+/* #my{
+    zoom: 90%;
+    } */
+
+body {
+    display:flex;
+    background-color: white;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: space-around;
+}
+
+/* 1. Top header with purple background--> */
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+    background-color: #63005A;
+    width:100%;
+    height:55px;
+    font-weight: bold;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.header li a{
+    background-color:rgba(255, 255, 255, .2);
+    color:white;
+    text-decoration: none;
+    padding: 7px 14px 7px 14px;
+    border-radius: 7px;
+}
+
+.header li {
+    display: inline;
+    color:black;
+}
+
+.signin {
+    margin-right: 5vw;
+    margin-left: 5px;
+}
+
+/*Content with 90% of viewport weight*/
+
+.content {
+    position: relative;
+    width: 90%;
+    height: 90vh;
+}
+
+/* 2. Craigslist logo row */
+
+
+    .logoBar {
+        height: 100px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+        /* Makes Menu Horizontal */
+        .logoBarButtons li {
+            display: inline;
+        }
+
+        .userIcon {
+            margin-left: 10px;
+        }
+
+/* 3. Menu Bar */
+
+    .menu {
+        height: 80px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        list-style: none;
+        font-weight: bold;
+    }
+
+        /* Makes Menu Horizontal */
+        .menu li a {
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            background-color:#B2B2B2;
+            color: white;
+            border-radius: 20px 20px 0px 0px;
+            padding: 15px 5vw 15px 5vw;
+            text-decoration: none;
+        }
+
+        .menu li a:hover:not(#active) {
+            background-color:#8F8F8F;
+          }
+
+        #active {
+            background-color: #63005A; 
+            }
+
+/* 4. Search Row */
+
+.searchRow{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    display:flex;
+    width: 100%;
+    height: 79px;
+    align-items: flex-end;
+    align-content: space-between;
+}
+
+.filters{
+    text-align: center;
+    background-color:#DDDDDD;
+    height: 9px;
+    padding: 12px 13px 19px 13px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    }
+
+.downArrow{
+    margin-left: 5px;
+}
+
+.searchBox {
+    margin-left: 200px;
+    margin-right: 8px;
+    height: 40px;
+    width: 450px;
+    background-color:#DDDDDD;
+    border-color: #DDDDDD;
+    border-radius: 7px;
+    margin-bottom: -1.5px;
+    padding: 0px 0px 0px 10px;
+    outline:none !important;
+
+
+}
+
+.searchButton {
+    /* margin-bottom: -4px; */
+    width: 60px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    padding: 0px 0px 0px 5px;
+    cursor: pointer;
+}
+
+#postButton {
+    background-color:#8D0080;
+    width: 130px;
+    height: 47px;
+    padding: 0px 3px 0px 0px;
+    margin-left: 410px;
+}
+
+/* 5. Heading */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #8D0080;
+}
+
+.boxLayout {
+    display:flex;
+    justify-content: center;
+}
+
+/* 6. Scroll Box */
+
+.scrollBox{
+    height:470px;
+    padding: 15px 20px 15px 20px;
+    width:100%;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    overflow:auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.tableTitle {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #8D0080;
+    font-weight: bold;
+    padding: 0px 20px 0px 20px;
+}
+
+table {
+    width: 100%;
+    /* border: 1px solid #ddd; */
+
+}
+
+td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+  }
+
+  .description {
+      width: 50%;
+      font-weight: bold;
+      color: #2800F8;
+      text-decoration: underline;
+      cursor: pointer;
+  }
+
+  #descriptionTitle {
+    color: #8D0080;
+    text-decoration: none;
+  }
+
+  .date {
+      width: 5%;
+  }
+
+  .views {
+      width: 13%;
+      text-align: center;
+  }
+
+  .location {
+      width: 20%;
+  }
+
+  .favorite {
+      width: 10%;
+      text-align: center;
+  }
+ 
+  /* 7. Footer */
+
+  .footer {
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+    background-color: #63005A;
+    width:100%;
+    height:35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+            
+
+
+
