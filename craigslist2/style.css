@@ -12,7 +12,6 @@ body {
     background-color: white;
     align-items: center;
     width: 100vw;
-    height:100vh;
     flex-direction: column;
     /* justify-content: center; */
     align-content: space-around;
@@ -59,7 +58,7 @@ body {
 .content {
     position: relative;
     width: 90%;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 /* 2. Craigslist logo row */
@@ -84,13 +83,16 @@ body {
 /* 3. Menu Bar */
 
     .menu {
-        height: 80px;
+        height: auto;
         display: flex;
+        flex-wrap: wrap;
         align-items: flex-end;
         justify-content: space-between;
         list-style: none;
         font-weight: bold;
-    }
+        margin-bottom: 20px;
+        margin-top: 20px;
+        }
 
         /* Makes Menu Horizontal */
         .menu li a {
@@ -101,6 +103,7 @@ body {
             border-radius: 20px 20px 0px 0px;
             padding: 15px 5vw 15px 5vw;
             text-decoration: none;
+            margin-bottom: 10px;
         }
 
         .menu li a:hover:not(#active) {
@@ -110,18 +113,60 @@ body {
         #active {
             background-color: #63005A; 
             }
+        
+        /* make menu objects align vertically */
+
+        /* phone */
+
+       @media only screen and (min-device-width : 0px) and (max-device-width : 735px) and (orientation : portrait) {
+
+        .menu li a {
+            /* Make border all round on mobile */
+            border-radius: 20px 20px 20px 20px;
+            text-align: center;
+            font-size: 10px;
+            padding: 10px 5vw 10px 5vw;
+            width: 130px;
+        }
+
+        }
+
+         /* ipad */
+
+         @media only screen and (min-device-width : 735px) and (max-device-width : 1355px) and (orientation : portrait) {
+
+        .menu li a {
+            /* Make border all round on mobile */
+            border-radius: 20px 20px 0px 0px;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px 4vw 15px 4vw;
+        }
+
+        }
+
 
 /* 4. Search Row */
 
 .searchRow{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 14px;
     display:flex;
     width: 100%;
-    height: 79px;
     align-items: flex-end;
-    align-content: space-between;
+    align-content: space-between;    
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+}
+
+.filterbox {
+    display: flex;
+    flex-direction: row;
 }
 
 .filters{
@@ -132,6 +177,7 @@ body {
     border-radius: 5px;
     margin-right: 10px;
     cursor: pointer;
+    width: 110px;
     }
 
 .downArrow{
@@ -139,48 +185,126 @@ body {
 }
 
 .searchBox {
-    margin-left: 200px;
     margin-right: 8px;
     height: 40px;
-    width: 450px;
+    width: 350px;
     background-color:#DDDDDD;
     border-color: #DDDDDD;
     border-radius: 7px;
-    margin-bottom: -1.5px;
     padding: 0px 0px 0px 10px;
     outline:none !important;
-
+    font-size: 11px;
 
 }
 
 .searchButton {
-    /* margin-bottom: -4px; */
+    position: relative;
     width: 60px;
     height: 42px;
     border: none;
     border-radius: 8px;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 3px;
     cursor: pointer;
+    left: 0px;
+}
+
+.postRow {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
 }
 
 #postButton {
     background-color:#8D0080;
     width: 130px;
     height: 47px;
-    padding: 0px 3px 0px 0px;
-    margin-left: 410px;
+    padding: 0px 0px 0px 0px;
+
 }
+
+    /* phone */
+
+    @media only screen and (min-device-width : 0px) and (max-device-width : 735px) and (orientation : portrait) {
+
+        .searchRow{
+            font-size: 10px;
+        }
+        
+        .filters{
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            width: 79px;
+            margin-bottom: 8px;
+            padding: 10px 15px 15px 10px;
+            }
+        
+        .downArrow{
+            margin-left: 8px;
+            margin-top: 3px;
+            width: 8px;
+        }
+        
+        .searchBox {
+            width: 250px;
+            height: 30px;
+        
+        }
+
+        .searchButton {
+            height: 30px;
+        }
+
+        #postButton {
+            background-color:#8D0080;
+            width: 110px;
+            height: 43px;
+            padding: 0px 0px 0px 0px;
+        
+        }
+        
+        
+        }
+
+     /* ipad */
+
+     @media only screen and (min-device-width : 512px) and (max-device-width : 1355px) and (orientation : portrait) {
+
+        .searchRow{
+            font-size: 12px;   
+            margin-bottom: 20px; 
+        }
+
+        .filters{
+            width: 90px;
+            }
+
+        .downArrow{
+            margin-left: 5px;
+            margin-top: 3px;
+            width: 8px;
+        }
+
+        .searchBox {
+            width: 200px;
+        }
+        .searchButton {
+            height: 33px;
+        }
+    }
+
 
 /* 5. Heading */
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
     margin-left: 10px;
     margin-bottom: 20px;
     font-size: 30px;
     color: #8D0080;
 }
+
+
 
 .boxLayout {
     display:flex;
@@ -209,6 +333,24 @@ h1 {
     font-weight: bold;
     padding: 0px 20px 0px 20px;
 }
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 512px) and (orientation : portrait) {
+
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    .tableTitle {
+        font-size: 13px;
+    }
+
+    table {
+        font-size: 10px;
+    
+    }
+
+    }
 
 table {
     width: 100%;
@@ -264,8 +406,8 @@ td, th {
     width:100%;
     height:35px;
     font-weight: bold;
-    margin-top: 30px;
     margin-bottom: 0px;
+    margin-top: 20px;
 }
 
             
