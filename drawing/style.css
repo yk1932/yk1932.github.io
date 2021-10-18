@@ -7,6 +7,7 @@
 
 body {
     background: url(images/background.jpg);
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -18,6 +19,7 @@ body {
 
 .logo {
     display:flex;
+    /* position:fixed; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -36,8 +38,9 @@ body {
     align-items: center;
     width: 100%;
     height: 48px;
-    background: #A9A9A9;
+    /* background: #A9A9A9; */
     border-radius: 17.5px;
+    /* margin-top: 130px; */
 }
 
 li{
@@ -49,7 +52,7 @@ li{
 
 li a{
     text-decoration: none;
-    color: white;
+    color: rgb(173, 172, 172);
     font-size: 12px;
     font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
     /* font-weight: 300; */
@@ -58,15 +61,24 @@ li a{
     letter-spacing: .05rem;
 }
 
+.menu a:hover {
+    font-weight: 600;
+  }
+  
+  .menu a.active {
+    font-weight: 500;
+  }
+  
+
 /* Rectangle 29 */
 
 .boxHolder {
 display:flex;
 justify-content: center;
-padding-top: 70px;
-padding-bottom:70px;
+padding-top: 50px;
+padding-bottom:50px;
 width: 100%;
-height: 600px;
+height: 500px;
 /* border: 1px solid red; */
 }
 
@@ -75,16 +87,22 @@ height: 600px;
     display:flex;
     justify-content: left;
     align-items: center;
-    width: 1200px;
+    width: 65%;
     padding: 0px 0 50px 0px;
     overflow: scroll;
-    border-radius: 30px;
+    border-radius: 17.5px;
     background:rgba(106,103,103,0.4);
+    /* background:rgba(238, 250, 252, 0.4); */
+    /* background:rgba(190,211,214,0.5); */
     box-shadow: inset -20px -13px 5px -5px hsla(0,0%,0%,.03);
     border-right: 50px solid rgba(106,103,103,0.002);
     border-left: 50px solid rgba(106,103,103,0.002);
     border-top: 50px solid rgba(106,103,103,0.002);
-    border-bottom: 15px solidc;
+    border-bottom: 15px;
+    /* transition: filter 1.5s ease-in-out; */
+
+
+
 }
 
 .scrollBox::-webkit-scrollbar {
@@ -93,14 +111,16 @@ height: 600px;
 
 .scrollBox:hover img {
     /* transform: scale(0.9); */
-    opacity: 1;
+    /* opacity: 1; */
+    transition: filter 0.6s ease-in-out;
+    filter: grayscale(0%);
 }
 
 img {
-    opacity: 0.4;
     border-radius: 17.5px;
     margin-right: 50px;
     height: 100%;
+    filter: grayscale(100%);
 }
 
 .drawingIntroText {
@@ -122,7 +142,7 @@ img {
 
 }
 
-.caption {
+.caption {    
     margin-right: 50px;
     color: white;
     font-size: 14px;
@@ -141,4 +161,12 @@ img {
     height: 500px;
     /* border: 1px solid red; */
     }
-    
+
+.footerFont {
+    color: rgb(173, 172, 172);
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: .05rem;
+    font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
+}
+
