@@ -1,0 +1,165 @@
+@font-face {
+font-family: "advent_Regular";
+src: url("fonts/AdventPro-Regular.ttf");}
+
+@font-face {
+font-family: "advent_Medium";
+src: url("fonts/AdventPro-Medium.ttf");}
+
+@font-face {
+font-family: "advent_Semi";
+src: url("fonts/AdventPro-SemiBold.ttf");}
+
+@font-face {
+font-family: "advent_Thin";
+src: url("fonts/AdventPro-Thin.ttf");}
+
+body {
+  font-family: "lora_font";
+  background-image: url("background.png");
+  border-radius: 13px;
+
+}
+
+.header {
+  overflow: hidden;
+  background-color: #817465;
+  padding: 10px 10px;
+  font-family: "advent_Semi";
+  border-radius: 13px;
+
+}
+
+.header a {
+  float: left;
+  color: #F5F3E7;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #F5F3E7;
+}
+
+.header a:hover {
+  background-color: #F5F3E7;
+  color: black;
+}
+
+.header a.active {
+  background-color: #93918A;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#left {
+  /* border: 1px solid lightgray; */
+  background-color: white;
+  width: 25%;
+  padding: 2%;
+
+}
+
+#right {
+  /* border: 1px solid lightgray; */
+  background-color: white;
+  font-size:13px;
+  width: 75%;
+  padding: 2%;
+
+}
+
+.button {
+  background-color: #93918A;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "advent_Regular";
+
+}
+
+.p1{
+  font-family: "advent_Regular";
+  font-size: 15px;
+  line-height: 1.4em;
+}
+
+.h1{
+  font-family: "advent_Semi";
+}
+
+.list-wrap {
+  padding:40px;
+  background-color:#white;
+  border-radius:5px;
+  width:90%;
+}
+
+
+.footer {
+  font-family: "advent_Semi";
+   width: 100%;
+   background-color: #817465;
+   color: white;
+   text-align: center;
+   border-radius: 13px;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
