@@ -1,0 +1,134 @@
+/* background */
+
+body {
+background-color: #1E1511;
+width: 100%;
+height: 100vh;
+border: 2px solid darkcyan;
+margin: 0 auto;
+position:relative;
+}
+
+/* Logo */
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    overflow: hidden;
+    background: #1E1511;
+    opacity: 0.9;
+    width:100%;
+    /* border: 1px solid darkcyan; */
+}
+.logoImage {
+    display: inline-block;
+    /* border: 1px solid darkcyan; */
+    padding: 0.6%;
+    height: 5vh;
+    margin: 1%;
+    margin-top: 2%
+}
+
+/* grilled cheese image */
+
+.grilledCheese {
+display: block;
+position: absolute;
+width: 80.89311859%;
+height: 85.15625%;
+left: 0px;
+bottom: 0px;
+}
+
+/* Welcome + Mission Statement */
+
+/* welcome rectangle */
+
+.messageBox {
+position: absolute;
+width:36.60322108%;
+height: 44.53125%;
+right: 0px;
+bottom: 90px;
+
+background: rgba(65, 53, 46, 0.9);
+opacity: 0.9;
+border-radius: 0px 0px 0px 53px;
+
+}
+
+.welcome {
+    position: absolute;
+    width:65.60322108%;
+    height: 62.53125%;
+    left: 15%;
+    top: 18%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    overflow: hidden;
+    background: #1E1511;
+    text-align: left;
+    opacity: 0.9;
+    right: 0px;
+    top: 22%;
+    width:19%;
+}
+
+.menu li a { 
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 95%;
+    /* border: 1px solid darkcyan; */
+  }
+
+.menu li a:hover {
+    background-color: #41352E
+    ;
+  }
+
+
+/* Footer */
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    overflow: hidden;
+    background: #1E1511;
+    text-align: center;
+    opacity: 0.9;
+    bottom: 0px;
+    width:100%;
+    /* border: 1px solid darkcyan; */
+}
+
+.footer li {
+    /* Make menu horizontal */
+    display: inline-block;
+  }
+
+.footer li a { 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 80%;
+    /* border: 1px solid darkcyan; */
+  }
+
+.footer li a:hover {
+    background-color: #111;
+  }
+
