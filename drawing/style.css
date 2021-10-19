@@ -146,7 +146,7 @@ height: 600px;
     font-size: 12px;
     font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
     font-weight: 200;
-    letter-spacing: .05rem;
+    letter-spacing: .07rem;
     text-align: center;
     line-height: 1.4rem;
     /* border: 1px solid red; */
@@ -196,7 +196,7 @@ height: 600px;
 .aboutMe{
     width:55%;
     color: white;
-    font-size: 12px;
+    font-size: 13px;
     font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
     font-weight: 100;
     letter-spacing: .05rem;
@@ -220,29 +220,253 @@ justify-content: center;
 align-content: center;
 width: 100%;
 height: auto;
-/* border: 1px solid red; */
+border: 1px solid red;
 }
+
 
 .pictureBox img {
     filter: grayscale(0%);
+            border: 1px solid red;
+            height: 400px;
+
 }
 
 .pictureBox::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
   }  
 
-.pictureBox{
+.pictureBox {
     display:flex;
     justify-content: left;
     align-items: center;
-    width: 63%;
-    /* padding: 0px 0 50px 0px; */
+    width: 62%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 19%;
+    margin-left: 19%;
     overflow: scroll;
-    /* border-radius: 17.5px; */
-    background:rgba(106,103,103,0;
-    /* background:rgba(238, 250, 252, 0.4); */
-    /* background:rgba(190,211,214,0.5); */
+    border-radius: 17.5px;
+    background:rgba(106,103,103,0);
     filter: grayscale(0%);
+            border: 1px solid red;
+
 }
+
+
+
+
+
+/* phone */
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 735px) and (orientation : portrait) {
+
+    body {
+        background: url(images/stair.jpg);
+        background-color: black;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height:100%;
+        background-size: 100%;
+        padding: 27px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .logo {
+        display:flex;
+        /* position:fixed; */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 45px;
+    
+        /* 891 * (87/700) */
+        height:103.7385714286px;
+      }
+
+      li a{
+        text-decoration: none;
+        color:#E5E5E5;
+        font-size: 10px;
+        font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
+        /* font-weight: 300; */
+    
+        font-weight: 300;
+        letter-spacing: .05rem;
+    }
+
+    .scrollBox{
+        display:flex;
+        justify-content: left;
+        align-items: center;
+        width: 75%;
+        padding: 0px 0 30px 0px;
+        overflow: scroll;
+        border-radius: 17.5px;
+        background:rgba(106,103,103,0.4);
+
+        border-right: 30px solid rgba(106,103,103,0.002);
+        border-left: 30px solid rgba(106,103,103,0.002);
+        border-top: 30px solid rgba(106,103,103,0.002);
+        border-bottom: 0px;
+        /* background:rgba(238, 250, 252, 0.4); */
+        /* background:rgba(190,211,214,0.5); */
+        /* box-shadow: inset -20px -13px 5px -5px hsla(0,0%,0%,.03); */
+        /* transition: filter 1.5s ease-in-out; */    
+    }
+
+    .boxHolder {
+        display:flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom:50px;
+        width: 100%;
+        height: 300px;
+        border: 1px solid red;
+        }
+        
+        .workHolder {
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        border: 1px solid red;
+        }
+
+        .captionWork {
+            margin-left: 0px;
+            margin-right: 50px;
+            color: white;
+            font-size: 12px;
+            font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
+            font-weight: 200;
+            letter-spacing: .05rem;
+            text-align: center;
+            line-height: 1.4rem;
+        }
+
+        .characterBox {
+            display:flex;
+            justify-content: center;
+            padding-bottom:70px;
+            width: 100%;
+            height: 300px;
+            /* border: 1px solid red; */
+            }
+
+            .drawingIntroText {
+                display:flex;
+                padding-left: 10px;
+                padding-right: 49px;
+                flex-direction: column;
+                justify-content: center;
+                margin-right: 50px;
+                height:100%;
+                color: white;
+                font-size: 12px;
+                font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
+                font-weight: 200;
+                letter-spacing: .07rem;
+                text-align: center;
+                line-height: 1.4rem;
+                /* border: 1px solid red; */
+            
+            }
+
+            .aboutMe{
+                width:80%;
+                color: white;
+                font-size: 9px;
+                font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
+                font-weight: 100;
+                letter-spacing: .05rem;
+                line-height: 1.4rem;
+                /* border: 1px solid red; */
+                margin-top: 10px;
+                padding-top: 10px;
+                padding-bottom:20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: justify;
+                text-justify: inter-word;
+                background-color:rgba(106,103,103,0.6);
+                    border-radius: 17.5px;
+            }
+
+            .pictureBox {
+                margin: 0px;
+                display:flex;
+                justify-content: left;
+                align-items: center;
+                overflow: scroll;
+                width: 90%;
+                border-radius: 10.5px;
+                background:rgba(106,103,103,0);
+                filter: grayscale(0%);
+                height: 200px;
+                border: 1px solid red;
+            }
+
+            .pictureBox img {
+                filter: grayscale(0%);
+            }
+
+            .pictureBox .bigimages {height: 200px; width: 300px; margin-right: 25px;}
+
+            .pictureBoxHolder {
+                display:flex;
+                justify-content: center;
+                padding-top: 10px;
+                padding-bottom:10px;
+                width: 100%;
+                border: 1px solid red;
+                }
+
+                .drawingIntroText {
+                    display:flex;
+                    padding-left: 60px;
+                    /* padding-right: 50px; */ */
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-right: 50px;
+                    height:100%;
+                    color: white;
+                    font-size: 10px;
+                    font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
+                    font-weight: 200;
+                    letter-spacing: .07rem;
+                    text-align: center;
+                    line-height: 1.4rem;
+                    /* border: 1px solid red; */
+                
+                }
+
+    }
+
+    @media only screen and (min-device-width : 735px) and (max-device-width : 1355px) and (orientation : portrait) {
+
+        .pictureBox {
+            display:flex;
+            justify-content: left;
+            align-items: center;
+            width: 72%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-right: 14%;
+            margin-left: 14%;
+            overflow: scroll;
+            background:rgba(106,103,103,0);
+            filter: grayscale(0%);
+                    border: 1px solid red;
+                    border-radius: 17.5px;
+
+        
+        }
+
+        }
+
+
+
+
 
 
