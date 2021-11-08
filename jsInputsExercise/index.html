@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="myForm">
+        <h1>Form - Yeji Kwon</h1>
+        <p>
+            <label for="firstname">First Name</label>:
+            <input type="text" name="firstname" id="firstname" required>
+        </p>
+        <p>
+            <label for="lastname">Last Name</label>:
+            <input type="text" name="lastname" id="lastname" required>
+        </p>
+        <p>
+            <label for="emailAddress">Email address</label>:
+            <input type="email" name="emailAddress" id="emailAddress" required placeholder="user@domain.com">
+        </p>
+        <p>
+            <input type="checkbox" name="checked" id="checked">
+            <label for="checked">Checkbox</label>
+        </p>
+
+        <input id="submit" type="submit" value="Submit">
+        <input id="cancel" type="reset" onClick="window.location.reload();" value="Cancel">
+    </form>
+
+    <div id="loader" class="loader"></div>
+    <p id="textHolder"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
