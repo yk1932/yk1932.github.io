@@ -62,7 +62,7 @@ li a{
     font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
     /* transition-duration: 0.5; */
     font-weight: 300;
-    letter-spacing: .05rem;
+    letter-spacing: .1rem;
     transition: all linear .2s;
 }
 
@@ -211,6 +211,8 @@ height: 600px;
     font-size: 12px;
     font-weight: 100;
     letter-spacing: .05rem;
+    text-align: center;
+    line-height: 1.8;
     font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
     z-index: 1000;
 }
@@ -361,7 +363,7 @@ z-index:500;
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
-    z-index: 900;
+    z-index: 1100;
 }
 
 .projectLinks:hover {
@@ -522,7 +524,7 @@ z-index:500;
 }
 
 .view {
-    background-color: #dfb7536d;;
+    background-color: #dfb7536d;
 }
 
 #workTwentyTwentyOne {
