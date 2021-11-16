@@ -363,7 +363,7 @@ z-index:500;
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
-    z-index: 1100;
+    z-index: 900;
 }
 
 .projectLinks:hover {
