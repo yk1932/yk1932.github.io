@@ -2,7 +2,7 @@ const parallax = document.getElementById("parallax");
 const boxHolder = document.getElementById("BoxDisappear");
 
 
-//Event Listener 1: Parallax Scrolling
+//Parallax Scrolling
 
     window.addEventListener("scroll",function(){
         let offset = window.pageYOffset;
@@ -10,53 +10,57 @@ const boxHolder = document.getElementById("BoxDisappear");
     })
 
 
-//Event Listener 2: Make div for about me darker on click to make text more visible, set back to default on mouse out
+// document.getElementById("titleText1").addEventListener("click",function(){
+//     console.log("i have been clicked!")
+// })
 
-    //About me holder
+//Scroll Up Button
 
-    // const aboutMeHolder = document.getElementById("aboutMe");
-    // console.log(aboutMeHolder);
-    
-    // aboutMeHolder.addEventListener("click", function(){
-    //     // aboutMeHolder.style.fontSize = "15px";
-    //     aboutMeHolder.style.backgroundColor="rgba(30,30,30,0.6)";
-        
-    // })
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
-    // aboutMeHolder.addEventListener("mouseout", function(){
-    //     // aboutMeHolder.style.fontSize = "13px";
-    //     aboutMeHolder.style.backgroundColor="rgba(106,103,103,0.6)";
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
-    // })
+document.getElementById("workTwentyTwentyOne").style.display = "block";
+document.getElementById("twentytwentyone").classList.add("view");
 
 
-//Event Listener 2: Make scrollbox expand when user hovers mouse on it
+document.getElementById("twentytwentyone").addEventListener("click",function(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    document.getElementById("workTwentyNineteen").style.display = "none";
+    document.getElementById("twentynineteen").classList.remove("view");
+    document.getElementById("workTwentyTwenty").style.display = "none";
+    document.getElementById("twentytwenty").classList.remove("view");
 
-    //Scroll Box 1
+    document.getElementById("workTwentyTwentyOne").style.display = "block";
+    document.getElementById("twentytwentyone").classList.add("view");
 
-    // const scrollBox1 = document.getElementById("scrollBox1");
+})
 
-    // scrollBox1.addEventListener("mouseover", function(){
-    //     scrollBox1.style.transform = "scale(1.05)";
-    // })
+document.getElementById("twentytwenty").addEventListener("click",function(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    document.getElementById("twentytwenty").classList.add("view");
 
-    // scrollBox1.addEventListener("mouseout", function(){
-    //     scrollBox1.style.transform = "scale(1)";
-    // })
+    document.getElementById("workTwentyNineteen").style.display = "none";
+    document.getElementById("twentynineteen").classList.remove("view");
+    document.getElementById("workTwentyTwentyOne").style.display = "none";
+    document.getElementById("twentytwentyone").classList.remove("view");
 
-    //Scroll Box 2
+    document.getElementById("workTwentyTwenty").style.display = "block";
+})
 
-    // const scrollBox2 = document.getElementById("scrollBox2");
+document.getElementById("twentynineteen").addEventListener("click",function(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    document.getElementById("workTwentyTwenty").style.display = "none";
+    document.getElementById("twentytwenty").classList.remove("view");
+    document.getElementById("workTwentyTwentyOne").style.display = "none";
+    document.getElementById("twentytwentyone").classList.remove("view");
 
-    // scrollBox2.addEventListener("mouseover", function(){
-    //     scrollBox2.style.transform = "scale(1.05)";
-    // })
+    document.getElementById("workTwentyNineteen").style.display = "block";
+    document.getElementById("twentynineteen").classList.add("view");
 
-    // scrollBox2.addEventListener("mouseout", function(){
-    //     scrollBox2.style.transform = "scale(1)";
-    // })
 
-document.getElementById("titleText1").addEventListener("click",function(){
-    console.log("i have been clicked!")
-    // this.querySelector("projectOneWork").style.display = "block";
 })
