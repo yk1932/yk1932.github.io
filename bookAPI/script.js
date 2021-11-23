@@ -22,7 +22,7 @@ let App = {
     for (var i = 0; i < data.results.length; i++) {
       console.log("hello i am working");
       var div = document.createElement("div");
-      div.innerHTML = 'List Name: ' + data.results[i].list_name + 'published on' + data.results[i].newest_published_date;
+      div.innerHTML = i + '. ' + data.results[i].list_name + ' published on ' + data.results[i].newest_published_date;
       mainContainer.appendChild(div);
     }
   },
