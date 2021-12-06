@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sketches | Yeji Kwon</title>
+    <link rel="icon" href="logo.svg" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="parallax">
+    <script src="three.min.js"></script>
+    <script>
+    let scene, camer;
+    function init() {
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(60,window,innerWidth / window.innerHeight,1,1000);
+        camera.position.z = 1;
+        camera.rotation.x = 1.16;
+        camera.rotation.y = -0.12;
+        camera.rotation.z = 0.27;
+
+        let ambient = new THREE.AmbientLight(0x555555);
+        scene.add(ambient);
+
+        renderer = new THREE.WebGLRenderer();
+        render.setSize(window.innerWidth,window.innerHeight);
+        scene.fod = new THREE.FogExp2(0x035442,0.001);
+        renderer.setClearColor(scene.fog.color);
+        document.body.appendChild(renderer.domElement);
+
+        let loader = new THREE.TextureLoader();
+        loader.load("smoke.png", function(texture){
+            cloudGeo = new THREE.PlaneBufferGeometry(500,500);
+            cloudMaterial = new THREE.MeshLambertMaterial({
+                map:texture,
+                transparent:true
+            });
+
+            for(let p=0; p<50; p++){
+                let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
+                cloud.position.set(
+                    Math.random()*800-400,
+                    500,
+                    Math.random()*500-500
+                );
+                cloud.rotation.x= 1.16;
+                cloud.rotation.y= -0.12;
+                cloud.rotation.z= Math.random()*2*Math.PI;
+                cloud.material.opacity=0.55;
+                scene.add(cloud);
+            }
+        });
+
+        render();
+    }
+
+    function render() {
+        renderer.render(scene,camera);
+        requestAnimationFrame(render);
+    }
+    init();
+    </script>
+    <div class="stickElements">
+        <div class="topLinkContainer">
+            <div class="linkContainer100">
+                <a href="resume.pdf"><button id="resume" class="projectLinks">resume</button></a>
+            </div>
+        </div>
+
+
+        <div class="logo fixed">
+            <svg width="65" viewBox="0 0 67 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_162:746)">
+                    <path
+                        d="M22.398 25.1464L0 12.965L10.1434 9.00164L22.9562 16.4134L23.1988 3.89623L33.2452 0L31.4252 37.0142L21.5972 40.8433L22.398 25.1464Z"
+                        fill="white" />
+                    <path d="M21.5972 40.8433L31.4009 37.0366L41.6414 37.2829L32.1047 41L21.5972 40.8433Z"
+                        fill="#544F52" />
+                    <path d="M43.2916 3.47078L33.2452 0L31.4009 37.0366L41.6414 37.2829L43.2916 3.47078Z"
+                        fill="#B9B7B7" />
+                    <path opacity="0.7"
+                        d="M67 15.0028L53.5078 14.6669L47.5139 18.9662L42.3937 22.6385L42.1268 27.9678L52.8768 37.574L65.8109 37.9099L65.8595 36.7679L52.4886 25.236L66.9757 15.3834L67 15.0028Z"
+                        fill="#727171" />
+                    <path opacity="0.7" d="M41.6414 37.3054L41.9569 30.946L41.6414 37.3054Z" fill="#727171" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_162:746">
+                        <rect width="67" height="41" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+        </div>
+
+
+        <div class="menu fixed">
+            <li class="link"><a href="index.html">sketches</a></li>
+            <li class="link"><a href="work.html">projects</a></li>
+            <li class="link"><a href="about.html">about me</a></li>
+        </div>
+    </div>
+    <div class = "whiteCoverContainer">
+            <div class = "whiteCover fixed"></div></div>
+    <div class = "emptyBlock"></div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.5 0L18.5933 11.25H0.406734L9.5 0Z" fill="#DEDEDE"/>
+        </svg>
+        </button>
+
+
+    <div class="bodyHolder">
+
+    </div>
+    <div class="menu">
+        <p class="footerFont">All Rights Reserved @nulb_o | Designed & Developed By Yeji Kwon</p>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
