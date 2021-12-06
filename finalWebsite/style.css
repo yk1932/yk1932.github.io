@@ -32,8 +32,6 @@ body {
 
 }
 
-
-
 .logo {
     display:flex;
     justify-content: left;
@@ -442,6 +440,16 @@ z-index:500;
     width: 100%;
     position: fixed;
     background-color:rgb(25, 30, 31);
+    z-index: 1000;
+    margin: 0;
+}
+
+.stickHomeElements{
+    top:0;
+    left:0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
     z-index: 1000;
     margin: 0;
 }
