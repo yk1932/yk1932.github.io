@@ -6,7 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
 
 canvas {
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     z-index: -1;
