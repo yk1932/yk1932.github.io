@@ -105,6 +105,8 @@ li a{
     font-weight: 500;
     font-size: 18px;
     transition: all linear .3s;
+    color: #ffb909;
+
   }
   
 .menu a.active {
@@ -115,13 +117,8 @@ font-size: 18px;
 .menuHome a:hover {
 font-weight: 400;
 font-size: 40px;
-color: yellow;
+color: #ffb909;
 transition: all linear .3s;
-}
-
-.menuHome a.active {
-font-weight: 500;
-font-size: 40px;
 }
 
 /* Rectangle 29 */
