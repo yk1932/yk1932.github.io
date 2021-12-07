@@ -31,7 +31,7 @@ let scene, camera, renderer, stars, starGeo;
 
         let sprite = new THREE.TextureLoader().load( 'star.png' );
         let starMaterial = new THREE.PointsMaterial({
-        color: #191E1F,
+        color: 0xaaaaaa,
         size: 0.7,
         map: sprite
         });

@@ -22,6 +22,7 @@ body {
     background-size: 100%;
     padding: 27px;
     font-family: 'Roboto Condensed', sans-serif;
+    border: 1px solid purple;
   }
 
 .container{
@@ -29,6 +30,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: transparent;
+
 }
 
 .logo {
@@ -488,6 +490,8 @@ z-index:500;
     display: flex;
     justify-content: center;
     z-index: 100;
+    border: 1px solid purple;
+
 }
 
 .whiteCover{    
@@ -495,6 +499,8 @@ z-index:500;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.459);
     z-index: 100;
+    border: 1px solid purple;
+
 }
 
 .caption {
