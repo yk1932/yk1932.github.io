@@ -13,7 +13,7 @@ canvas {
   }
 
 body {
-    /* background-color: rgb(129, 129, 129); */
+    background-color:#000000;
     /* background: url(images/stairs.jpg); */
     background-size: cover;
     background-attachment: fixed;
@@ -21,9 +21,8 @@ body {
     height:100%;
     background-size: 100%;
     padding: 27px;
-    font-family: 'Roboto Condensed', sans-serif;
-    border: 1px solid purple;
-  }
+    font-family: 'Roboto Condensed', sans-serif;  
+}
 
 .container{
     width:100%;
@@ -37,9 +36,10 @@ body {
     display:flex;
     justify-content: left;
     align-items: center;
-    width: 100%;
+    width: 10%;
     margin-left: 20px;
     margin-top: 10px;
+    z-index: 1000;
   }
 
 
@@ -51,6 +51,8 @@ body {
     height: 48px;
     border-radius: 17.5px;
     margin-top: 20px;
+
+    
 }
 
 .menuHome {
@@ -137,11 +139,8 @@ height: 500px;
 display:flex;
 justify-content: center;
 padding-top: 30px;
-/* margin-bottom:30px; */
 width: 100%;
 height: 600px;
-/* border: 1px solid purple; */
-
 }
 
 
@@ -154,7 +153,6 @@ height: 600px;
     border-radius: 17.5px;
     background:rgba(163, 163, 163, 0.411);
     padding: 20px;
-    /* border: 1px solid purple; */
     z-index: 400;
 }
 
@@ -212,9 +210,6 @@ height: 600px;
     text-align: center;
     line-height: 1.4rem;
     z-index:500;
-
-    /* border: 1px solid red; */
-
 }
 
 .caption {    
@@ -279,9 +274,6 @@ height: 600px;
     background-color:rgba(106,103,103,0.6);
     border-radius: 17.5px;
     z-index:500;
-
-
-
 }
 
 .AboutHolder {
@@ -318,7 +310,6 @@ z-index:500;
     background:rgba(106,103,103,0);
     filter: grayscale(0%);
     z-index:1000;
-    border: 1px solid red;
 }
 
 /* Work */
@@ -331,7 +322,6 @@ z-index:500;
     height: auto;
     padding-top: 10px;
     padding-bottom:20px;
-    border: 1px solid red;
     }
 
     .titleText{
@@ -480,6 +470,17 @@ z-index:500;
     position: fixed;
     z-index: 1100;
     margin: 0;
+    background-color: #000000;
+}
+
+.stickHomeElements{
+    top:0;
+    left:0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1100;
+    margin: 0;
 }
 
 .emptyBlock {
@@ -490,8 +491,6 @@ z-index:500;
     display: flex;
     justify-content: center;
     z-index: 100;
-    border: 1px solid purple;
-
 }
 
 .whiteCover{    
@@ -499,8 +498,6 @@ z-index:500;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.459);
     z-index: 100;
-    border: 1px solid purple;
-
 }
 
 .caption {
@@ -589,7 +586,7 @@ z-index:500;
 .homeMenuHolder {
     display: flex;
     align-items: center;
-    border: 1px solid rgb(253, 253, 253);
+    /* border: 1px solid rgb(253, 253, 253); */
     height: 75vh;
 }
 
