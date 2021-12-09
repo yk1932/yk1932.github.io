@@ -717,6 +717,34 @@ section{
 
 @media only screen and (min-device-width : 0px) and (max-device-width : 735px) and (orientation : portrait) {
 
+    .projectLinks {
+        font-size: 8px;
+    }
+
+    .titleText{
+        font-size: 18px;
+    }
+
+    .titleSubText{
+        font-size: 10px;
+    }
+
+    .yearButton {
+         z-index: 2000;
+    }
+    #resume{
+        position: fixed;
+        top:30px;
+        right: 20px;
+        z-index: 1100;
+        transition: all linear .4s;
+        opacity: 0%;
+    }
+
+    .logo {
+        opacity: 0%;
+    }
+
     body {
         background: url(images/stair.jpg);
         background-color: black;
@@ -858,7 +886,6 @@ section{
                 height: 200px;
                 border: 1px solid red;
                 z-index: 1000;
-
             }
 
             .pictureBox img {
