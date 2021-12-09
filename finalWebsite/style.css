@@ -599,10 +599,10 @@ section{
 
   }
   .container{
-    background-color:rgba(106, 103, 103, 0.13);
+    /* background-color:rgba(106, 103, 103, 0.13); */
     width: 63%;
     margin: 0 auto;    
-    padding: 25px;
+    /* padding: 25px; */
     border-radius: 20px;
     text-align: center;
     z-index: 1000;
@@ -625,7 +625,7 @@ section{
   input{
     border: none;
     border-bottom: 1px solid rgba(195, 195, 195, 0.514);
-    font-size: 15px;
+    font-size: 30px;
     width: 100%;
     outline: none;
     color: rgb(255, 255, 255);
@@ -640,6 +640,7 @@ section{
   }
   form ion-icon{
     position: absolute;
+    bottom: 5px;
     right: 0;
     font-size: 20px;
     opacity: .5;
@@ -659,6 +660,7 @@ section{
     overflow: hidden;
     border-radius:8px;
     transition: .4s ease box-shadow;
+    /* background-color:rgba(106, 103, 103, 0.123); */
     border: 0.1px solid rgb(71, 71, 71);
     filter: grayscale(100%);
   }
@@ -700,6 +702,11 @@ section{
     cursor: pointer;
     font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
     font-weight: 100;
+  }
+
+  .load-more:hover {
+    transition: all linear .4s;
+    background-color:#ffb90989;
   }
 
   #getInspired {
