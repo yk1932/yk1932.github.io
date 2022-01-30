@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    padding:8em;
+    border-color:blue;
+    /* border-style: solid;     */
+    background: url(images/alternate.jpg);
+    background-color: #202124;
+    background-size: 170%;
+    background-attachment: fixed;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 17.5px;
+    margin-top: 20px;
+    /* border-color:red;
+    border-style: solid; */
+}
+
+li{
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: "Roboto", 'Helvetica Neue', 'Helveica', 'Arial', sans-serif;
+    /* transition-duration: 0.5; */
+    font-weight: 300;
+    letter-spacing: .1rem;
+    transition: all linear .2s;
+}
+
+.menu a:hover {
+    font-weight: 500;
+    font-size: 18px;
+    transition: all linear .3s;
+    color: rgb(255, 208, 199);
+
+  }
+  
+.menu a.active {
+font-weight: 500;
+font-size: 18px;
+}
+
+
+/* Title of classes */
+
+.classTitleHolder {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    border-color:red;
+    /* border-style: solid; */
+    height: 80vh;
+}
+
+.classTitleHolder__Title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 130px;
+    font-size: 4vw;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    color: rgb(252, 233, 206);
+}
+
+
+.project {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+    /* border: 1px solid red; */
+    column-gap: 6vw;
+}
+
+
+  /* Project Title */
+
+  .projectTitle {
+      
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 0.1em;
+    font-size:2.2vw;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
+    color: rgb(252, 233, 206);
+    margin-bottom: 70px;
+    margin-top: 100px;
+  }
+
+  .projectDescription {
+    font-family: 'Roboto';
+    font-size:0.85vw;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    line-height: 2;
+    color: rgb(252, 233, 206);
+    margin-bottom: 17px;
+    text-align: justify;
+  }
+
+  .projectDescriptionSerif {
+    font-family: 'DM Serif Display', serif;
+    font-size:1.2vw;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+    color: rgb(252, 233, 206);
+    margin-bottom: 20px;
+  }
+
+  .section {
+    width: 50%;
+  }
+
+
+  /* Footer */
+
+  .footerHolder{
+    font-family: 'Roboto';
+    font-size:50px;
+    font-weight: 100;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-size:0.7vw;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    line-height: 2;
+    color: rgb(252, 233, 206);
+  }
+  
+  
+
