@@ -1,0 +1,34 @@
+body { 
+    padding: 0; margin: 0; 
+    background-color: #CCBDB1;
+}
+
+
+#svgOne {
+    /* display:none; */
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+#svgTwo {
+    display: none;
+    position: fixed;
+
+    bottom: 0;
+    width: 100vw;
+}
+
+.svgThree {
+    display:none;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.svgFour {
+    display:none;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
