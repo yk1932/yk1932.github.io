@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <title>colorlog</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Start page - color log : archive your emotions -->
+    <div class="contents" id="contents">
+      <div class="startPage" id="startPage">
+        <div class="startPage__titleColor" id="titleColor">color</div>
+        <div class="startPage__titleLog" id="titleLog">log</div>
+        <div class="startPage__subtitleLog" id="subtitleLog">
+          archive your <br />
+          emotions
+        </div>
+      </div>
+
+      <!-- About Page: Purpose of the app -->
+      <div class="aboutPage" id="aboutPage">
+        <div class="aboutPageDescription" id="aboutPageDescription">
+          Colorlog aims to help users perceive their emotions visually through
+          color. A gradient is created with the user's colors, on top of
+          which they can untangle their thoughts using words. The
+          interface was designed with an intention of providing a space of
+          reflection within the hecticness that is life. Facing our emotions,
+          pleasant and unpleasant, is the first step to being able to recognize
+          our needs, communicate them effectively, overcome challenges, and use them as a fuel to empathize with others.
+        </div>
+        <button class="start__button" id="start__button">
+          click here to start
+        </button>
+      </div>
+
+      <!-- Header with logo and add button -->
+      <div class="headBar" id="headBar">
+        <div class="headBar__container" id="headBar__container">
+
+            <button
+            type="button"
+            class="headBar__backButton"
+            id="headBar__backButton"
+            >
+            ←
+            </button>   
+          <div class="headBar__logo" id="headBar__logo">
+            <svg width="25" height="25" opacity="70%" viewBox="0 0 270 277" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M124.105 0.531801C96.8352 2.99121 72.8693 12.7624 50.9114 30.3106C42.2318 37.29 41.8432 35.2959 54.4739 48.2577L65.4204 59.4912L68.5943 56.7659C83.6864 43.7377 104.802 34.5647 124.169 32.77L129.286 32.3047L129.481 16.1524L129.61 0.0665073L128.185 0.199448C127.343 0.265919 125.53 0.39886 124.105 0.531801Z" fill="white"/>
+                <path d="M140.103 16.1523L140.298 32.3047L145.415 32.77C164.393 34.5647 184.278 42.94 199.824 55.7023L204.228 59.4247L215.24 48.1912L226.186 36.9576L223.272 34.1659C211.742 23.3976 193.994 12.9617 177.672 7.37821C166.466 3.52291 158.499 1.86115 143.99 0.398796L139.974 -2.77162e-05L140.103 16.1523Z" fill="white"/>
+                <path d="M33.4875 47.2606C23.3182 58.8265 13.2784 76.3747 7.8375 92.1947C4.01591 103.295 2.07273 112.801 0.388636 129.219L0 133.008L15.7398 132.875L31.4795 132.675L31.933 127.424C33.6818 107.948 41.8432 87.5418 54.3443 71.5889L57.9068 67.0689L46.8955 55.7689L35.9489 44.5353L33.4875 47.2606Z" fill="white"/>
+                <path d="M222.624 55.8353L211.677 67.0689L215.305 71.5889C227.741 87.5418 235.902 107.948 237.651 127.424L238.105 132.675L253.844 132.875L269.584 133.008L269.195 129.219C267.965 117.321 267.252 112.668 265.633 105.755C262.394 92.3277 257.277 79.2995 250.606 67.933C247.043 61.7512 237.586 48.5236 235.06 46.1306L233.506 44.6683L222.624 55.8353Z" fill="white"/>
+                <path d="M0.388636 147.432C1.61932 159.33 2.33182 163.983 3.95114 170.896C7.25455 184.655 12.242 197.152 18.9136 208.718C22.5409 214.899 31.9977 228.127 34.5239 230.52L36.0784 231.982L46.9602 220.815L57.9068 209.582L54.2795 205.062C41.8432 189.109 33.6818 168.702 31.933 149.227L31.4795 143.975L15.7398 143.776L0 143.643L0.388636 147.432Z" fill="white"/>
+                <path d="M238.169 144.441C237.975 144.906 237.716 147.498 237.522 150.224C236.032 168.702 226.769 191.103 214.268 206.258L211.612 209.515L222.559 220.749C235.19 233.711 233.247 233.312 240.048 224.405C252.614 207.854 260.969 190.438 265.633 170.896C267.252 163.983 267.965 159.33 269.195 147.432L269.584 143.643H253.974C242.056 143.643 238.299 143.842 238.169 144.441Z" fill="white"/>
+                <path d="M54.2795 228.592L43.3977 239.826L45.8591 242.086C47.2193 243.349 50.0693 245.742 52.2068 247.404C74.1648 264.553 96.317 273.261 125.594 276.252L129.61 276.651L129.481 260.498L129.286 244.346L124.169 243.881C104.867 242.086 83.6216 232.913 68.7239 220.018C67.0398 218.555 65.6148 217.425 65.4204 217.425C65.2909 217.425 60.2386 222.477 54.2795 228.592Z" fill="white"/>
+                <path d="M201.184 219.818C196.585 223.939 186.416 230.586 179.485 233.976C168.215 239.494 156.75 242.817 145.415 243.881L140.298 244.346L140.103 260.498L139.974 276.651L143.666 276.252C155.26 274.989 159.794 274.258 166.531 272.596C187.647 267.278 205.848 257.64 222.43 243.083L226.251 239.826L215.305 228.592C209.345 222.477 204.293 217.425 204.099 217.425C203.905 217.492 202.609 218.555 201.184 219.818Z" fill="white"/>
+                </svg>
+          </div>
+
+          <button
+            type="button"
+            class="headBar__postButton"
+            id="headBar__postButton"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <!-- Post Container -->
+      <div class="container" id="container">
+        <ul class="posts" id="msgs"></ul>
+      </div>
+
+      <!-- Create Page -->
+      <div class="create" id="create">
+        <div class="logPage" id="logPage">
+          <div class="create__container" id="create__container">
+           
+
+            <!-- Text Input -->
+            <textarea
+              id="postInput"
+              class="create__post"
+              placeholder="Express your mood in color"
+            ></textarea>
+            <div class="colorandlog">
+            <!-- Color Input -->
+            <input
+            type="color"
+            class="colorInput"
+            id="colorInput"
+            name="head"
+            value="#e66465"
+        />
+        <button class="create__button" id="create__button">log</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer">
+            <p>created by Yeji Kwon | 2022</p>
+          </div> -->
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
