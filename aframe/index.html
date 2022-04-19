@@ -1,0 +1,41 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.5.0/aframe.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a-scene>
+        <a-sphere></a-sphere>
+        <!-- <a-plane width="10" height="10" position="0 0 -2.5" ></a-plane> -->
+    </a-scene>
+    <div class = "all-content">
+        <p class="title">Customize your ball!</p>
+        <p class="subtitle" id="subtitle">Drag to rotate, arrow keys to move</p>
+
+        <div class="gradient-buttons">
+        <button class = "button" type="button" id="faster">faster</button>
+        <button class = "button" type="button" id="bigger">bigger</button>
+
+        </div>
+
+        <div class="gradient-buttons">
+                <button class = "button" type="button" id="slower">slower</button>
+                <button class = "button" type="button" id="smaller">smaller</button>
+        </div>
+       
+        <div class="gradient-buttons">
+            <button class = "button" type="button" id="colorchange">change color</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<script src="index.js"></script>
